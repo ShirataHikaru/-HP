@@ -1,0 +1,81 @@
+body {
+  position: relative;
+  overflow: hidden;
+  visibility: hidden;
+}
+
+/* #container
+--------------------------- */
+#container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+/* .stageBase
+--------------------------- */
+.stageBase {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.stageBase .fieldWrap {
+  padding: 100px 0 0 0;
+  text-align: center;
+}
+#stage1 {background:#ffffff;}
+#stage2 {background:#eeeeee;}
+#stage3 {background:#dddddd;}
+
+/* #pageNav
+--------------------------- */
+#pageNav {
+  top: 0;
+  right: 25px;
+  width: 15px;
+  text-align: center;
+  position: fixed;
+  z-index: 2;
+}
+#pageNav ul {
+  width: 15px;
+  display: block;
+}
+#pageNav ul li {
+  padding-bottom: 5px;
+  width: 15px;
+  height: 15px;
+  display: block;
+  overflow: hidden;
+}
+#pageNav ul li a {
+  width: 15px;
+  height: 15px;
+  background: transparent no-repeat center center;
+  display: block;
+}
+#pageNav ul li.activeStage a {
+  background: transparent no-repeat center center;
+}
+
+/* #pageDown
+--------------------------- */
+#pageDown {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  position: fixed;
+  overflow: hidden;
+  z-index: 3;
+}
+#pageDown a {
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  background: transparent no-repeat center center;
+  display: block;
+}
