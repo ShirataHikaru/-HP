@@ -1,0 +1,190 @@
+/***********************************
+            共通要素
+***********************************/
+body {
+  font-family: 'Roboto', sans-serif;
+
+  background-color: #fefefe;
+  color: #222;
+}
+
+
+a:link { color: #999; }
+a:visited { color: #999; }
+a:hover { color: #999; }
+a:active { color: #999; }
+
+#container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.stageBase{
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.fieldWrap{
+  position: absolute;
+  text-align: center;
+  width: 85%;
+  height:100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+}
+
+span#name, span#concepts,span#works {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+/***********************************
+            1ページ目
+***********************************/
+#stage1 h2{
+  text-shadow: 1px 2px 2px rgba(0,0,0,0.3);
+  font-size: 300%;
+  margin: 0 auto;
+}
+
+
+.conA, .conB{
+  display: inline;
+}
+
+/***********************************
+            2ページ目
+***********************************/
+#stage2 h2 {
+  color: black;
+  font-size: 300%;
+  font-weight: bold;
+  margin: 20px auto;
+}
+
+#animeA{
+  position: relative;
+  right: 100%;
+  color: black;
+  font-size: 300%;
+
+}
+
+#animeB{
+  position: relative;
+  left: 100%;
+  color: black;
+  font-size: 300%;
+}
+
+
+/***********************************
+            3ページ目
+***********************************/
+
+#stage3 {
+  position: absolute;
+  background-color: #222;
+  color: #fff;
+  height: 80%;
+  width: 100%;
+}
+
+#stage3 .fieldWrap{
+  width: 85%;
+}
+
+#stage3 #title3{
+  position: absolute;
+  left: 0%;
+  top: 30%;
+  width: 25%;
+  font-size: 40px
+}
+
+#title3:before,#title3:after{
+  position: relative;
+  display: inline-block;
+  font-size: 64px;
+  color: #ff6a6a;
+}
+#title3:before{
+  content:"<";
+}
+#title3:after{
+  content:">";
+}
+
+#stage3 #list{
+  position: absolute;
+  margin: 0 auto;
+  height: 70%;
+  width:75%;
+  top: 10%;
+  right: 0%;
+  display: grid;
+  grid-row-gap: 30%;
+  grid-column-gap: 1%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px auto;
+}
+
+#stage3 .item{
+  position: relative;
+  margin: 0%;
+}
+
+#stage3 .thumbnail{
+  object-fit: contain;
+  width: 100%;
+  height: 200%;
+  background-color: #ccc;
+  border: 1px solid #ccc;
+}
+
+/***********************************
+            フッター
+***********************************/
+
+footer{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 20%;
+  background-color: #f8f8f8;
+  color: #999;
+  text-align: left;
+}
+
+h2.contacts-box{
+  display: inline-block;
+  vertical-align: top;
+  border: 4px double #aaa;
+  padding: 2%;
+}
+
+p.contacts-box{
+  display: inline-block;
+  margin-left: 5%;
+  margin-right: 5%;
+  vertical-align:middle;
+}
+
+footer #inline-footer{
+  padding-left: 5%;
+}
+
+footer #inline-footer p{
+  font-size: 24px;
+}
+

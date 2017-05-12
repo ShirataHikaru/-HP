@@ -4,37 +4,78 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title>自己紹介ページ</title>
-  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/icomoon/style.css">
+
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script type="text/javascript" charset="utf-8" src="./app.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="js/jquery.scrollify.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
   <div id="container">
 
     <section id="stage1" class="stageBase">
-      <div class="fieldWrap">
-        <h1>jQuery OnePage Scroll</h1>
-        <p>ここは1ページ目</p>
-      </div>
-      <!--/.fieldWrap -->
+      <div class="fieldWrap" id="page1">
+        <span id="name">
+          <h2 id="title1">ShirataHikaru.</h2>
+        </span>
+
+      </div><!--/.fieldWrap -->
     </section>
 
     <section id="stage2" class="stageBase">
-      <div class="fieldWrap">
-        <p>ここは2ページ目</p>
-      </div>
-      <!--/.fieldWrap -->
+      <div class="fieldWrap" id="page2">
+        <span id="concepts">
+          <h2 id="title2">問題解決思考</h2>
+          <div id="animeA" class="conA">User Happy</div><div class="conA">の追求</div><br/>
+          <div class="conB">ユーザ体験まで含めて</div><div class="conB" id="animeB">Design</div>
+        </span>
+      </div><!--/.fieldWrap -->
     </section>
 
     <section id="stage3" class="stageBase">
-      <div class="fieldWrap">
-        <p>ここは3ページ目</p>
-      </div>
-      <!--/.fieldWrap -->
+      <div class="fieldWrap" id="page3">
+        <div class="box"><h2 id="title3">Others</h2></div>
+        <div id="list" class="box">
+          <figure class="item">
+            <a href="https://github.com/ShirataHikaru/NoteChat_ishinomaki_hackathon2016" target="_blank">
+              <img src="image/ishinomaki.jpg" class="thumbnail" />
+              <figcaption>2016年7月31日</figcaption>
+            </a>
+           </figure>
+          <figure class="item">
+            <a href="https://github.com/ShirataHikaru/HighEnder" target="_blank">
+              <img src="image/taki1.jpg" class="thumbnail"/>
+              <figcaption>2016年11月20日</figcaption>
+            </a>
+          </figure>
+          <figure class="item">
+            <img src="image/couplefamliy.jpg" class="thumbnail"/>
+            <figcaption>もう少ししたらあげます</figcaption>
+          </figure>
+          <figure class="item">
+            <a href="http://qiita.com/ShirataHikaru" target="_blank">
+              <img src="image/images.png" class="thumbnail"/>
+              <figcaption>たまにQiita書いてます</figcaption>
+            </a>
+          </figure>
+        </div>
+      </div><!--/.fieldWrap -->
+      <footer>
+        <div id="inline-footer">
+          <h2 class="contacts-box">Contact</h2>
+          <p class="contacts-box">ShirataHikaru<br/>
+            <a href="https://www.facebook.com/hikaru.shirata" target="_blank"><span class="icon icon-facebook"></span>
+            </a>
+            <a href="https://github.com/ShirataHikaru" target="_blank"><span class="icon icon-github"></span>
+            </a>
+          </p>
+        </div>
+      </footer>
     </section>
-  </div>
-  <!--/#container-->
+  </div><!--/#container-->
 </body>
 
 </html>
