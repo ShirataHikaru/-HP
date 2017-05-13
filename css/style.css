@@ -1,15 +1,17 @@
 /***********************************
-            共通要素
+            Base
 ***********************************/
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "FOT-筑紫明朝 Pr6N L", "Hiragino Mincho ProN", "ヒラギノ明朝 ProN W3", "HG明朝E", "MS PMincho", "ＭＳ Ｐ明朝", serif;
 
   background-color: #fefefe;
   color: #222;
 }
 
 
-a:link { color: #999; }
+a:link { color: #999;
+  text-decoration:none;
+}
 a:visited { color: #999; }
 a:hover { color: #999; }
 a:active { color: #999; }
@@ -40,21 +42,43 @@ a:active { color: #999; }
   margin: 0 auto;
 }
 
-span#name, span#concepts,span#works {
+#name, #concepts,#works {
   position: absolute;
-  top: 40%;
+  vertical-align: middle;
+  top: 20%;
   left: 0;
   right: 0;
   margin: 0 auto;
+  font-size: 32px;
 }
 
 /***********************************
             1ページ目
 ***********************************/
-#stage1 h2{
-  text-shadow: 1px 2px 2px rgba(0,0,0,0.3);
-  font-size: 300%;
-  margin: 0 auto;
+#stage1 .fieldWrap #name {
+  height: 73.5%;
+  background-color: #222;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+
+#stage1 div#name #title1{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+
+  height: 40%;
+
+  text-shadow: 1px 2px 2px rgba(255,255,255,0.3);
+  font-size: 400%;
+  transform: scale(1,1.1618);
+  color: #fff;
 }
 
 
@@ -107,9 +131,10 @@ span#name, span#concepts,span#works {
 #stage3 #title3{
   position: absolute;
   left: 0%;
-  top: 30%;
+  top: 35%;
   width: 25%;
-  font-size: 40px
+  font-size: 40px;
+  margin: 0 auto;
 }
 
 #title3:before,#title3:after{
@@ -127,14 +152,13 @@ span#name, span#concepts,span#works {
 
 #stage3 #list{
   position: absolute;
-  margin: 0 auto;
   height: 70%;
-  width:75%;
+  width:80%;
   top: 10%;
   right: 0%;
   display: grid;
   grid-row-gap: 30%;
-  grid-column-gap: 1%;
+
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px 100px auto;
 }
@@ -142,12 +166,13 @@ span#name, span#concepts,span#works {
 #stage3 .item{
   position: relative;
   margin: 0%;
+  height: 220%;
 }
 
 #stage3 .thumbnail{
   object-fit: contain;
-  width: 100%;
-  height: 200%;
+  width: 342px;
+  height: 211px;
   background-color: #ccc;
   border: 1px solid #ccc;
 }
@@ -168,23 +193,33 @@ footer{
 
 h2.contacts-box{
   display: inline-block;
-  vertical-align: top;
   border: 4px double #aaa;
-  padding: 2%;
+  font-size: 200%;
+  text-align: center;
+  vertical-align: middle;
+  width: 150px;
+  padding: 21px 0;
+  margin: 0 auto;
 }
 
 p.contacts-box{
   display: inline-block;
   margin-left: 5%;
-  margin-right: 5%;
   vertical-align:middle;
+  width: 50%;
 }
 
 footer #inline-footer{
-  padding-left: 5%;
+  padding-left: 10%;
+  width: 100%;
+  height: 100%;
 }
 
 footer #inline-footer p{
-  font-size: 24px;
+  font-size: 300%;
+}
+
+footer #inline-footer .name{
+  margin-right: 64px;
 }
 

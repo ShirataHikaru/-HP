@@ -2,7 +2,7 @@ function slideInLeft() {
   $('#animeA').css({
     'opacity' : '1',
   })
-  .animate({'right':'2%'}, 1800);
+  .animate({'right':'2%'}, 1500);
 
 }
 
@@ -10,7 +10,7 @@ function slideInRight() {
   $('#animeB').css({
     'opacity' : '1',
   })
-  .animate({'left':'2%'}, 1800);
+  .animate({'left':'2%'}, 1500);
 }
 
 
