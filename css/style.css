@@ -57,6 +57,7 @@ a:active { color: #999; }
 ***********************************/
 #stage1 .fieldWrap #name {
   height: 73.5%;
+  width: 80%;
   background-color: #222;
   position: absolute;
   top: 0;
